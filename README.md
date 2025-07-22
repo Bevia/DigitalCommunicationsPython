@@ -79,4 +79,7 @@ This project is licensed under the MIT License. See LICENSE for details.
 📡 About the Author
 
 👋 Created by Vincent Bevia — a senior software engineer and DSP enthusiast.
+
+Worked as a Telecommunication Engineer at EFData and Fairchild with hands-on experience in satellite system engineering, signal processing, and communications link analysis.
+
 Feel free to reach out for feedback, suggestions, or collaboration!
