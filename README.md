@@ -16,37 +16,6 @@ A Python-based toolkit to simulate, visualize, and analyze digital modulation sc
 - 🚧 **OFDM** (Coming soon)
 - 🚧 **32-QAM, 64-QAM, 128-QAM** Support (Planned)
 
-## 📊 Example: QPSK with AWGN
-
-```python
-from qpsk.qpsk_modem import simulate_qpsk
-simulate_qpsk(num_symbols=1000, snr_db=10, rotation_deg=30)
-
-<p align="center">
-  <img src="assets/qpsk_awgn_example.png" width="600" alt="QPSK with AWGN">
-</p>
-
-
-
-⸻
-
-🛠️ Installation
-
-git clone https://github.com/yourusername/digital-modulation-toolkit.git
-cd digital-modulation-toolkit
-pip install -r requirements.txt
-
-
-⸻
-
-🧪 Run Simulations
-
-python examples/visualize_qpsk.py
-
-Or use interactive Jupyter notebooks inside examples/.
-
-⸻
-
 🎯 Roadmap
 	•	QPSK with BER and noise visualization
 	•	16-QAM basic implementation
