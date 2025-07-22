@@ -30,7 +30,7 @@ Modulation techniques like QAM (Quadrature Amplitude Modulation) are critical in
 
 ⸻
 
-✅ Why Modulation Matters in Satellite Modems
+✅ Modulation Matters in Satellite Modems
 
 1. Efficient Use of Bandwidth
 	•	Satellites operate over limited spectrum (e.g., Ku, Ka bands), so using higher-order modulations like 16-QAM, 64-QAM allows transmitting more bits per symbol.
