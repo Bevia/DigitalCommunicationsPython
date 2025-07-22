@@ -16,34 +16,6 @@ A Python-based toolkit to simulate, visualize, and analyze digital modulation sc
 - 🚧 **OFDM** (Coming soon)
 - 🚧 **32-QAM, 64-QAM, 128-QAM** Support (Planned)
 
----
-
-## 📂 Project Structure
-
-modulation_toolkit/
-│
-├── qpsk/                  # QPSK modulation + noise + BER
-│   ├── qpsk_modem.py
-│   └── qpsk_ber_plot.py
-│
-├── qam/                   # 16-QAM, 32-QAM, etc.
-│   ├── qam16_modem.py
-│   ├── qam32_modem.py     # (WIP)
-│   └── qam_utils.py
-│
-├── ofdm/                  # OFDM simulation (planned)
-│   └── ofdm_modem.py
-│
-├── utils/                 # Shared helpers (bit mapping, noise, etc.)
-│   └── channel.py
-│
-├── tests/                 # Unit tests and validation scripts
-│
-└── examples/              # Jupyter notebooks / demo scripts
-└── visualize_qpsk.py
-
----
-
 ## 📊 Example: QPSK with AWGN
 
 ```python
