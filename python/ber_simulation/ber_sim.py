@@ -1,5 +1,5 @@
 import numpy as np
-from modulation.qam16 import add_awgn_noise
+from modulation.qam.qam16 import add_awgn_noise
 
 
 def generate_bits(num_bits):
