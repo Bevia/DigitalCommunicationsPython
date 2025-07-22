@@ -7,7 +7,8 @@ access schemes like OFDM. Let’s break it down in the context of constellation 
 
 🔷 What Does Orthogonality Mean?
 
-In communication, two signals are orthogonal if their inner product (integral of their product over a symbol period) is zero. This means that they do not interfere with each other when transmitted simultaneously — a powerful property that enables multiple signals to coexist.
+In communication, two signals are orthogonal if their inner product (integral of their product over a symbol period) is zero. 
+This means that they do not interfere with each other when transmitted simultaneously — a powerful property that enables multiple signals to coexist.
 
 ⸻
 
@@ -53,7 +54,6 @@ In OFDM, orthogonality is in frequency:
 This allows overlapping carriers with no interference — maximizing spectral efficiency.
 
 ⸻
-
 ✅ Summary
 
 Concept	Orthogonality Means…	How It Helps
@@ -61,19 +61,15 @@ QPSK constellation	I and Q signals don’t interfere	Simple, independent demodul
 QAM constellation	Still based on I/Q orthogonality	Enables higher-order modulation
 OFDM	Subcarriers don’t interfere even when overlapped	Parallel transmission of data
 
-
 ⸻
-
 Generate a plot that visualizes this orthogonality in the constellation or in signal space
 
 ![img.png](img.png)
 
 Here’s a visualization of orthogonality in digital modulation:
-	1.	QPSK I and Q Components: The in-phase (I) and quadrature (Q) components are cosine and sine waves of the same frequency. 
-Their inner product (area under the curve of their product) is approximately zero — confirming orthogonality.
-	2.	I × Q Product: The product of the I and Q signals oscillates around zero, and its integral over a symbol period is nearly zero. 
+1.	QPSK I and Q Components: The in-phase (I) and quadrature (Q) components are cosine and sine waves of the same frequency. 
+Their inner product (area under the curve of their product) is approximately zero — confirming orthogonality. 
+2. I × Q Product: The product of the I and Q signals oscillates around zero, and its integral over a symbol period is nearly zero. 
 This means the receiver can separate the two without interference.
-	3.	OFDM Subcarriers: The two sine waves at frequencies f1 and f2 are orthogonal over a symbol period — a key idea behind OFDM, 
+3.	OFDM Subcarriers: The two sine waves at frequencies f1 and f2 are orthogonal over a symbol period — a key idea behind OFDM, 
 allowing many signals to coexist without interference.
-
-Let me know if you’d like to simulate rotation, noise, or other effects on this. ￼
