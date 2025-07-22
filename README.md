@@ -26,6 +26,40 @@ A Python-based toolkit to simulate, visualize, and analyze digital modulation sc
 
 ⸻
 
+Modulation techniques like QAM (Quadrature Amplitude Modulation) are critical in satellite communication systems because they directly impact data rate, bandwidth efficiency, and robustness against noise and interference. Here’s a concise breakdown:
+
+⸻
+
+✅ Why Modulation Matters in Satellite Modems
+
+1. Efficient Use of Bandwidth
+	•	Satellites operate over limited spectrum (e.g., Ku, Ka bands), so using higher-order modulations like 16-QAM, 64-QAM allows transmitting more bits per symbol.
+	•	This increases data throughput without needing more bandwidth.
+
+2. Trade-off Between Data Rate and Robustness
+	•	QPSK (4-QAM) is more robust to noise and phase distortions (important for long-distance satellite links with weak signals).
+	•	16-QAM or higher increases data rates but is more susceptible to errors, so it’s typically used under good SNR conditions.
+
+3. Adaptive Modulation
+	•	Many satellite modems use adaptive modulation, adjusting between QPSK, 8-PSK, 16-QAM, etc., depending on link quality (e.g., rain fade in Ka-band).
+	•	This ensures maximum efficiency and link reliability.
+
+4. Demodulation at Receiver
+	•	Satellite receivers need to demodulate signals accurately even with impairments like:
+	•	Doppler shift
+	•	Phase noise from LNB/oscillators
+	•	Non-linearities from power amplifiers
+
+Hence, modulation schemes are designed to be resilient and recoverable under these conditions.
+
+⸻
+
+🛰️ Summary:
+
+QAM and related modulation techniques are the foundation of reliable and efficient satellite communications, enabling high-speed data transfer while adapting to harsh and variable space link conditions.
+
+Let me know if you want a comparison chart between QPSK, 8PSK, and 16-QAM for satellite use.
+
 🤝 Contributing
 
 Pull requests are welcome! Whether you’re fixing a bug, adding a new scheme, or improving visualizations — all help is appreciated.

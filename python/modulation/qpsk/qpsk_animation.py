@@ -1,11 +1,13 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+
 def generate_qpsk_symbols(num_symbols):
     bits = np.random.randint(0, 2, (num_symbols, 2))
     symbols = (2 * bits[:, 0] - 1) + 1j * (2 * bits[:, 1] - 1)
     symbols /= np.sqrt(2)  # normalize energy
     return symbols
+
 
 def add_awgn(symbols, snr_db):
     snr_linear = 10 ** (snr_db / 10)
@@ -13,9 +15,11 @@ def add_awgn(symbols, snr_db):
     noise = np.sqrt(noise_power) * (np.random.randn(*symbols.shape) + 1j * np.random.randn(*symbols.shape))
     return symbols + noise
 
+
 def apply_rotation(symbols, rotation_deg):
     theta = np.deg2rad(rotation_deg)
     return symbols * np.exp(1j * theta)
+
 
 def visualize_qpsk_noise_and_rotation():
     num_symbols = 1000
@@ -50,5 +54,6 @@ def visualize_qpsk_noise_and_rotation():
 
     plt.tight_layout()
     plt.show()
+
 
 visualize_qpsk_noise_and_rotation()

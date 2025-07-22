@@ -20,6 +20,7 @@ def bpsk_modulate(bits, fc, fs, samples_per_bit):
     bit_values = np.repeat(2 * bits - 1, samples_per_bit)  # Map 0→-1, 1→+1
     return bit_values * carrier, t
 
+
 def bpsk_demodulate(signal, bits, fc, fs, samples_per_bit):
     recovered_bits = []
     for i in range(len(bits)):
@@ -49,6 +50,7 @@ def get_bpsk_symbols(signal, fc, fs, samples_per_bit):
         symbols.append(complex(I, Q))
     return np.array(symbols)
 
+
 def plot_constellation(symbols, title="Constellation Diagram"):
     plt.figure(figsize=(5, 5))
     plt.plot(symbols.real, symbols.imag, 'bo')
@@ -67,7 +69,8 @@ def add_awgn(signal, snr_db):
     snr_linear = 10 ** (snr_db / 10)
     noise_power = sig_power / snr_linear
     noise = np.random.normal(0, np.sqrt(noise_power), signal.shape)
-    return signal + noise
+    return signal + noise  # set noise to 0 to see noise influence in constellation
+
 
 # Plotting
 plt.figure(figsize=(12, 5))
