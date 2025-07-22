@@ -60,9 +60,19 @@ def add_awgn(signal, snr_db):
     return signal + noise
 
 
+# Add phase noise
+def apply_phase_noise(signal, std_dev_rad):
+    phase_noise = np.random.normal(0, std_dev_rad, len(signal))
+    return signal * np.exp(1j * phase_noise)
+
+
 # Simulation parameters
 num_bits = 10000
 snr_db = 10  # Change this to test different SNRs
+
+
+# Parameters
+phase_noise_std = 0.05  # Radians, try 0.05 for mild, or 0.2 for strong
 
 # Generate random bits
 tx_bits = np.random.randint(0, 2, num_bits)
@@ -70,11 +80,21 @@ tx_bits = np.random.randint(0, 2, num_bits)
 # Modulate
 tx_symbols = bits_to_symbols(tx_bits, qam4_lut)
 
+# Apply phase noise (simulating jitter/LO instability)
+tx_symbols_noisy = apply_phase_noise(tx_symbols, phase_noise_std)
+
 # Add AWGN
-rx_symbols = add_awgn(tx_symbols, snr_db)
+rx_symbols = add_awgn(tx_symbols_noisy, snr_db)
 
 # Demodulate
 rx_bits = symbols_to_bits(rx_symbols, qam4_lut)
+
+
+# plotting the constellation for different values of phase_noise_std:
+for std in [0.0, 0.05, 0.1, 0.2]:
+    rx_symbols = add_awgn(apply_phase_noise(tx_symbols, std), snr_db)
+    # plot rx_symbols...
+
 
 # Compute BER
 num_bit_errors = np.sum(tx_bits != rx_bits)
