@@ -91,7 +91,7 @@ rx_bits = symbols_to_bits(rx_symbols, qam4_lut)
 
 
 # plotting the constellation for different values of phase_noise_std:
-for std in [0.0, 0.05, 0.1, 0.2]:
+for std in [0.0, 0.05, 0.1, 0.2, 0.3]:  # add or delete to see how phase noise affects the constellation
     rx_symbols = add_awgn(apply_phase_noise(tx_symbols, std), snr_db)
     # plot rx_symbols...
 
