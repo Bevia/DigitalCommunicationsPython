@@ -24,7 +24,7 @@ A Python-based toolkit to simulate, visualize, and analyze digital modulation sc
   - Channel modeling (multipath, fading, Doppler)
   - CLI tool or Web dashboard
 
-⸻
+
 📚 Digital Communications / Coding Theory
 `Subtopics`:
 - Forward Error Correction (FEC):
