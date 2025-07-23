@@ -28,16 +28,16 @@ A Python-based toolkit to simulate, visualize, and analyze digital modulation sc
 📚 Digital Communications / Coding Theory
 
 Subtopics:
-	•	Forward Error Correction (FEC):
-	•	Convolutional codes → Viterbi algorithm, trellis decoding
-	•	Block codes → Reed-Solomon, Hamming codes, LDPC, BCH
-	•	Decoding Algorithms:
-	•	Viterbi (for convolutional codes)
-	•	Berlekamp-Massey (for Reed-Solomon)
-	•	Modulation and Coding Schemes (MCS):
-	•	Combined use of modulation (QAM, PSK) with coding
-	•	Channel Capacity & Noise Modeling:
-	•	AWGN, Rayleigh fading, etc.
+- Forward Error Correction (FEC):
+- convolutional codes → Viterbi algorithm, trellis decoding 
+- block codes → Reed-Solomon, Hamming codes, LDPC, BCH 
+- Decoding Algorithms:
+  - Viterbi (for convolutional codes)
+  - Berlekamp-Massey (for Reed-Solomon)
+  - Modulation and Coding Schemes (MCS):
+    - Combined use of modulation (QAM, PSK) with coding 
+    - Channel Capacity & Noise Modeling:
+    - AWGN, Rayleigh fading, etc.
 
 ⸻
 
