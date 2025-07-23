@@ -26,6 +26,7 @@ A Python-based toolkit to simulate, visualize, and analyze digital modulation sc
 
 
 📚 Digital Communications / Coding Theory
+
 `Subtopics`:
 - Forward Error Correction (FEC):
 - convolutional codes → Viterbi algorithm, trellis decoding 
