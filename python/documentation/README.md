@@ -1,7 +1,3 @@
-Great! Here’s a clean and structured README-style outline you can use for documentation, educational content, or a GitHub repo that covers error correction and digital communications topics like Viterbi, Reed-Solomon, trellis decoding, etc.
-
-⸻
-
 📡 Digital Communications & Error Correction
 
 👤 Author
