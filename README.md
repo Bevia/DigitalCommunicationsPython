@@ -16,18 +16,17 @@ A Python-based toolkit to simulate, visualize, and analyze digital modulation sc
 - 🚧 **OFDM** (Coming soon)
 - 🚧 **32-QAM, 64-QAM, 128-QAM** Support (Planned)
 
-🎯 Roadmap
-	•	QPSK with BER and noise visualization
-	•	16-QAM basic implementation
-	•	32-QAM, 64-QAM, 128-QAM
-	•	OFDM simulation with FFT/IFFT
-	•	Channel modeling (multipath, fading, Doppler)
-	•	CLI tool or Web dashboard
+🎯 Roadmap 
+- QPSK with BER and noise visualization 
+- QAM basic implementation 
+  - 4QAM, 16QAM, 32QAM, 64-QAM, 128-QAM 
+  - OFDM simulation with FFT/IFFT 
+  - Channel modeling (multipath, fading, Doppler)
+  - CLI tool or Web dashboard
 
 ⸻
 📚 Digital Communications / Coding Theory
-
-Subtopics:
+`Subtopics`:
 - Forward Error Correction (FEC):
 - convolutional codes → Viterbi algorithm, trellis decoding 
 - block codes → Reed-Solomon, Hamming codes, LDPC, BCH 
