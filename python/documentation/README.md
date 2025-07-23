@@ -90,5 +90,3 @@ Or explore each section via Jupyter notebooks.
 	•	Build a GUI to visualize signal flow in real-time
 
 ⸻
-
-Let me know if you’d like a specific file/folder structure or sample Python files for this setup.
