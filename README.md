@@ -25,6 +25,21 @@ A Python-based toolkit to simulate, visualize, and analyze digital modulation sc
 	•	CLI tool or Web dashboard
 
 ⸻
+📚 Digital Communications / Coding Theory
+
+Subtopics:
+	•	Forward Error Correction (FEC):
+	•	Convolutional codes → Viterbi algorithm, trellis decoding
+	•	Block codes → Reed-Solomon, Hamming codes, LDPC, BCH
+	•	Decoding Algorithms:
+	•	Viterbi (for convolutional codes)
+	•	Berlekamp-Massey (for Reed-Solomon)
+	•	Modulation and Coding Schemes (MCS):
+	•	Combined use of modulation (QAM, PSK) with coding
+	•	Channel Capacity & Noise Modeling:
+	•	AWGN, Rayleigh fading, etc.
+
+⸻
 
 Modulation techniques like QAM (Quadrature Amplitude Modulation) are critical in satellite communication systems because they directly impact data rate, bandwidth efficiency, and robustness against noise and interference. Here’s a concise breakdown:
 
